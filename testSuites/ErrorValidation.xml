@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite parallel="tests" name="Suite">
+<groups>
+<run>
+<include name="Errorhandling"/>
+</run></groups>
+  <test thread-count="5" name="SubmitOrderTest">
+    <classes>
+      <class name="selenium.SeleniumFrameworkDesign.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="ErrorValidations">
+    <classes>
+      <class name="selenium.SeleniumFrameworkDesign.ErrorValidationsTest">
+      <methods>
+      <includes>
+      <include  name="ProductErrorValidation"></include>
+      <include  name="LoginErrorValidation"></include>
+      </includes>
+       </methods>
+       </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
